@@ -132,7 +132,6 @@ function Payment() {
                 </button>
               </div>
               {error && <div>{error}</div>}
-              alert(finalAd);
             </form>
           </div>
         </div>
