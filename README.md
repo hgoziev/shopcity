@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Shop City 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Full Stack Shopping application
+
+Auth: Firebase Authorization
+
+Backend :  Firebase firestore , Express , Nodejs
+
+
+Front: ReactJs
+
+
+
 
 ## Available Scripts
 
