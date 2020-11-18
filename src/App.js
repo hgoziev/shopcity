@@ -12,6 +12,7 @@ import Login from "./Pages/Login";
 import Payment from "./Pages/Payment";
 import Orders from "./Pages/Orders.js";
 import { useStateValue } from "./Context/StateProvider";
+import Footer from "./Components/Footer";
 
 const promise = loadStripe("pk_test_T2wqJIKWILUFy05WjPptogR7");
 function App() {
@@ -50,10 +51,12 @@ function App() {
             <Elements stripe={promise}>
               <Payment />
             </Elements>
+            <Footer />
           </Route>
           <Route path="/">
             <Header />
             <Home />
+            <Footer />
           </Route>
         </Switch>
       </div>

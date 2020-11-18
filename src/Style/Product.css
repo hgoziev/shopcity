@@ -34,6 +34,10 @@
   padding: 7px;
   border-radius: 3px;
 }
+.product > button:hover {
+  background-color: #111;
+  color: #f0c14b;
+}
 .product__rating {
   display: flex;
 }

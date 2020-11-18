@@ -27,6 +27,21 @@
 .payment__details {
   flex: 0.75;
 }
+.payment__address > form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.payment__address > form > input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.payment__address > form > div > input {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
 
 .payment__price__container {
   margin-top: 40px;
@@ -51,4 +66,19 @@
 }
 .payment__details > form {
   max-width: 400px;
+}
+.submit {
+  padding: 5px;
+  width: 30%;
+  align-self: center;
+  border-color: #a88734 #9c7e31 #846a29;
+
+  color: #111;
+  background-color: #f0c14b;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.submit:hover {
+  background-color: #111;
+  color: #f0c14b;
 }

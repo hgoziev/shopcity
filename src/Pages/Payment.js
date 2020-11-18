@@ -18,6 +18,7 @@ function Payment() {
   const [processing, setProcessing] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [clientSecret, setClientSecret] = useState(true);
+
   const history = useHistory();
 
   const stripe = useStripe();
@@ -64,11 +65,12 @@ function Payment() {
         history.replace("./orders");
       });
   };
-
+  let address;
   const handleChange = (event) => {
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");
   };
+
   return (
     <div className="payment">
       <div className="payment__container">
@@ -77,13 +79,13 @@ function Payment() {
         </h1>
         <div className="payment__section">
           <div className="payment__title">
-            <h3>Delivery address</h3>
+            <h3>Delivery[address</h3>
           </div>
           <div className="payment__address">
-            <p>{user?.email}</p>
-            <p> 102 Axmadbek st</p>
-            <p>Shaxrion , Andijon </p>
-            <p>Uzbekistan 171616</p>
+            <p>Any district</p>
+            <p>Andjon region</p>
+            <p>Uzbekistan</p>
+            <p>100000</p>
           </div>
         </div>
 
@@ -130,6 +132,7 @@ function Payment() {
                 </button>
               </div>
               {error && <div>{error}</div>}
+              alert(finalAd);
             </form>
           </div>
         </div>
