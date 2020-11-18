@@ -1,7 +1,7 @@
 import { Link, useHistory } from "react-router-dom";
 import React from "react";
 import "../Style/Login.css";
-import logo from "../assets/images/shop.png";
+import logo from "../Assets/images/shop.png";
 import { useState } from "react";
 import { auth } from "../Firebase";
 

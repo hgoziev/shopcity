@@ -7,7 +7,7 @@ import SearchIcon from "@material-ui/icons/Search";
 
 import "../Style/Header.css";
 import { useStateValue } from "../Context/StateProvider";
-import logo from "../assets/images/shop3.png";
+import logo from "../Assets/images/shop3.png";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -35,10 +35,12 @@ function Header() {
             </span>
           </Link>
         </div>
-        <div className="header__option">
-          <span className="header__option__firstLine">Returns</span>
-          <span className="header__option__secondLine">& Orders</span>
-        </div>
+        <Link to="/orders" className="header__logo__link">
+          <div className="header__option">
+            <span className="header__option__firstLine">Returns</span>
+            <span className="header__option__secondLine">& Orders</span>
+          </div>
+        </Link>
         <Link to="/checkout">
           <div className="header__optionBasket">
             <ShoppingBasketIcon />
